@@ -5,6 +5,7 @@
     "import/no-unresolved": "off",
     "import/no-extraneous-dependencies": "off",
     "no-useless-concat": "off",
-    "no-confusing-arrow": "off"
+    "no-confusing-arrow": "off",
+    "arrow-body-style": 0
   }
 }
