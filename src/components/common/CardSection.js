@@ -1,18 +1,22 @@
 import React from 'react';
-import styled from 'styled-components';
+import { View } from 'react-native';
 
-const CardSection = ({ children }) => (
-  <SectionContainer>{children}</SectionContainer>
-);
+const CardSection = props => {
+  return (
+    <View style={[styles.containerStyle, props.style]}>{props.children}</View>
+  );
+};
 
-const SectionContainer = styled.View`
-  border-bottom-width: 1px;
-  padding: 5px;
-  background-color: #fff;
-  justify-content: flex-start;
-  flex-direction: row;
-  border-color: #ddd;
-  position: relative;
-`;
+const styles = {
+  containerStyle: {
+    borderBottomWidth: 1,
+    padding: 5,
+    backgroundColor: '#fff',
+    justifyContent: 'flex-start',
+    flexDirection: 'row',
+    borderColor: '#ddd',
+    position: 'relative'
+  }
+};
 
 export { CardSection };
